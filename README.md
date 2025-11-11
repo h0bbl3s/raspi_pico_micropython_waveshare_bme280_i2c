@@ -22,19 +22,21 @@ GND to GND
 ## Improvements
 
 Added a one time i2c scan to ensure correct module address
-Changed BME280.py to reflect the default address for the waveshare module
-Added in use of the onboard RTC on the pico for timestamping the readings
+Changed BME280.py to reflect the default address for the waveshare module.
+Added in use of the onboard RTC on the pico for timestamping the readings.
 
 ## Notes
 
 I had issues with my board being on the wrong address at first and pinned it down to this
-from the datasheet
+from the datasheet.
 
 > The 7-bit device address is 111011x. The 6 MSB bits are fixed. The last bit is changeable by
 > SDO value and can be changed during operation. Connecting SDO to GND results in slave
 > address 1110110 (0x76); connection it to VDDIO results in slave address 1110111 (0x77), which
 > is the same as BMP280’s I²C address. The SDO pin cannot be left floating; if left floating, the
 > I²C address will be undefined.
+
+On the waveshare board the SDO(ADDR on the board) is pulled high by default giving an address of 0x77.
 
 The waveshare BME280 can also run in SPI mode and has many other features worth checking out.
 You can find more including a link to the datasheet on the [Waveshare website](https://www.waveshare.com/wiki/BME280_Environmental_Sensor)
