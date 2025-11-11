@@ -10,11 +10,11 @@ at the proper address, and then print timestamped outputs of the temperature in 
 To get started simply save the main.py and BME280.py to a raspberry pi pico running micropython, wire up your module, and run the program!
 I'll leave it to you to read the original blog post for more detail as they did a good job, but I will demonstrate my simplified wiring.
 
-From Pico to BME
-Pin 6(GP4, I2C0 SDA) to SDA
-Pin 7(GP5, I2C0 SCL) to SCL
-GND to GND
-3.3v out to VCC
+From Pico to BME  
+Pin 6(GP4, I2C0 SDA) to SDA  
+Pin 7(GP5, I2C0 SCL) to SCL  
+GND to GND  
+3.3v out to VCC  
 
 ![Pico_and_bme280](images/wiring.jpg "Wiring") ![Pico_and_bme280_2](images/wiring2.jpg "Wiring alternate angle")
 ![Screenshot](images/screenshot.png "screenshot")
