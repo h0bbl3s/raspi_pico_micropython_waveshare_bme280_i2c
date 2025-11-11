@@ -7,6 +7,7 @@ The code is from the [RandomNerdTutorials.com](https://randomnerdtutorials.com/r
 
 This code will scan the i2c bus and print any found devices, initialize a waveshare BME280 Environmental sensor 
 at the proper address, and then print timestamped outputs of the temperature in F and C, the humidity, and the Pressure in hPa.
+To get started simply save the main.py and BME280.py to a raspberry pi pico running micropython, wire up your module, and run the program!
 I'll leave it to you to read the original blog post for more detail as they did a good job, but I will demonstrate my simplified wiring.
 
 From Pico to BME
@@ -16,6 +17,7 @@ GND to GND
 3.3v out to VCC
 
 ![Pico_and_bme280](images/wiring.jpg "Wiring") ![Pico_and_bme280_2](images/wiring2.jpg "Wiring alternate angle")
+![Screenshot](images/screenshot.png "screenshot")
 
 ## Improvements
 
